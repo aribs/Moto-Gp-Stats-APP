@@ -1,6 +1,38 @@
+body{
+   font-size: 22px;
+   background-color: #4C4940;
+   color: #FFFFFF;
+   font-family: 'Roboto Slab', serif;
+}
+img{
+   width: 200px;
+   height: 209px;
+   border-radius: 5px;
+   margin-top: 15px;
+   margin-bottom: 15px;
+}
+#pilots{
+   padding-left: 20%;
+   padding-right: 20%;
+}
+h1{
+   padding-left: 20%;
+   padding-right: 20%;
+   color: #9169B2;
+   font-weight: 900;
+}
+#viewGraphic{
+   margin-left: 20%;
+   margin-right: 20%;
+   width: 200px;
+   margin-bottom: 15px;
+   background-color: #9169B2;
+   border-color: #9169B2;
+
+}
 // Load the fonts
 Highcharts.createElement('link', {
-   href: '//fonts.googleapis.com/css?family=Unica+One',
+   href: 'fonts.googleapis.com/css?family=Roboto+Slab:100',
    rel: 'stylesheet',
    type: 'text/css'
 }, null, document.getElementsByTagName('head')[0]);
@@ -17,7 +49,7 @@ Highcharts.theme = {
          ]
       },
       style: {
-         fontFamily: "'Unica One', sans-serif"
+         fontFamily: "'Roboto Slab', serif"
       },
       plotBorderColor: '#606063'
    },
@@ -206,3 +238,4 @@ Highcharts.theme = {
 
 // Apply the theme
 Highcharts.setOptions(Highcharts.theme);
+
