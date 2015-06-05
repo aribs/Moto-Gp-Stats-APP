@@ -1,0 +1,15 @@
+a{
+	text-decoration: none;
+}
+#headerMenu{
+	background-color: #9169B2;
+	width:100%;
+	height: 36px;
+}
+.contenLine{
+	width:200px;
+	height: 10px;
+}
+#menu{
+	width: 200px;
+}

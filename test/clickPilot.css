@@ -1,0 +1,17 @@
+body{
+	margin-left: -10px;
+}
+img{
+	width: 150px;
+	height: 150px;
+	margin-top: 10px;
+}
+.inline{
+	display: inline-block;
+}
+.imgPilot{
+	
+	display: inline;
+	margin: 10px;
+	margin-top: 20px;
+}

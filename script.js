@@ -2,6 +2,7 @@ arrayPilots = [];
 $(document).ready(function(){
 	getPilot("Marquez");
 	getPilot("Lorenzo");
+    $("#menu").hide();
 	function getPilot(namePilot){
 		$.ajax({
 				url: "http://localhost:3000/api/pilots/" + namePilot,
@@ -100,3 +101,6 @@ $("#viewGraphic").on("click",function(){
     });
 
 })
+$("#btnMenu").on("click",function(){
+    $("#menu").slideToggle()
+});
