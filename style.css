@@ -23,6 +23,11 @@ h1{
    color: #9169B2;
    font-weight: 900;
 }
+h3{
+   padding-left: 20%;
+   padding-right: 20%;
+   font-weight: 900;
+}
 #viewGraphic{
    margin-left: 20%;
    margin-right: 20%;
