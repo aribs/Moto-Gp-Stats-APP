@@ -1,3 +1,4 @@
+var myMap 
 $(document).ready(function(){
 	getAllRaces();
 	function getAllRaces(){
@@ -22,18 +23,22 @@ $(document).ready(function(){
       		lat: 29.799583,
       		lng: -36.367787,
       		zoom: 2, 
-      		styles:  [{"stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"visibility":"on"},{"hue":"#ffffff"},{"saturation":-100},{"lightness":100}]},{"featureType":"water","stylers":[{"visibility":"on"},{"lightness":-35},{"saturation":-100}]},{"featureType":"administrative.province","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"administrative.country","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":90}]}]
+      		styles:  [{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#4c4940"},{"visibility":"on"}]}]
 
     	});
+
     	for(var i=0; i <= allLatitudes.length-1; i++){
 		 	map.addMarker({
+		 		
   				lat: allLatitudes[i],
   				lng: allLongitudes[i],
   				title: allNames[i],
+  				icon: 'ducati-diavel.png',
+  				click: function(e) {
+  					map.setCenter(this.position.A, this.position.F)   					 
+				}
 			});
 		};
-
-
 	};
 	function getLatitudes(gp_races){
 		var allLatitudes = [];

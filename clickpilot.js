@@ -25,7 +25,7 @@ $(document).ready(function(){
 		$("#infoPilots").slideDown();
 		var clickedPilot = $(this).attr("id");
 		var position = $(this).position();
-		$("#infoPilots").css({ "position": "relative", "top": position.top-206 +"px", "left": position.left + 'px' });
+		$("#infoPilots").css({ "position": "relative", "top": position.top-325 +"px", "left": position.left+ 10 + 'px' });
 		 clickedPilot = parseInt(clickedPilot);
 		 $("#listName").text(allPilots[clickedPilot].name);
 		 $("#listLastName").text(allPilots[clickedPilot].last_name);

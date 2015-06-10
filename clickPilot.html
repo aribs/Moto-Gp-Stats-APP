@@ -2,13 +2,24 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
          <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:100' rel='stylesheet' type='text/css'>
          <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" type="text/css" href="clickPilot.css">
+        
 
         <title></title>
     </head>
+    <body>
+        <div id="headerMenu">
+            <img id="btnMenu" src="btnMenu.png">
+        </div>
+        <div id="menu">
+            <div class="contenLine"><a href="index.html">Pilots Stats</a></div>
+            <div class="contenLine"><a href="gpstats.html">GP Stats</a></div>
+            <div class="contenLine"><a href="clickPilot.html">All Pilots</a></div>
+            <div class="contenLine"><a href="#">Menu 4</a></div>
+        </div>
+        <h1>All Pilots in 2015</h1>
     	<div id="photoPilots">
     	</div>
         <div id="infoPilots">
@@ -24,9 +35,11 @@
                 <p>Fastest lap: <span id="listFastestLap" class="textPilot"></span></p>
             </div>
         </div>
-    <body>
+    
 
      <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+     <script src="script.js"></script>
      <script type="text/javascript" src="clickpilot.js"></script>
+
     </body>
 </html>
