@@ -47,6 +47,7 @@ $(document).ready(function(){
 });
 //end
     
+
 $("#viewGraphic").on("click",function(){
     $('#container').highcharts({
         chart: {
@@ -101,6 +102,6 @@ $("#viewGraphic").on("click",function(){
     });
 
 })
-$("#btnMenu").on("click",function(){
-    $("#menu").slideToggle()
+$("#btnMenu").on("click", function(){
+    $("#menu").slideToggle();
 });

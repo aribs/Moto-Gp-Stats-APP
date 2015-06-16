@@ -1,0 +1,41 @@
+#myDraggable{
+	width: 200px;
+	height: 200px;
+	background-color: red;
+}
+#myDraggable.ui-draggable-dragging{
+	background-color: black;
+}
+#myDropable{
+	width: 200px;
+	height: 200px;
+	background-color:blue;
+}
+#myDraggable2{
+	width: 200px;
+	height: 200px;
+	background-color: red;
+}
+.puzzle{
+	width: 150px;
+	height: 150px;
+	border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    margin: 0;
+    z-index: 3;
+}
+.imgPuzzle{
+	width: 150px;
+	height: 150px;
+	z-index: 2;
+}
+#containerPhotos{
+	width:40%;
+	float: right;
+	z-index: 1;
+}
+#emptyPuzzle{
+	width: 40%;
+	float: left;
+}
